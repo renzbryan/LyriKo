@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyriKo</title>
+
+
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+        body{ 
+                background: url("/image/bgimage.jpg"), linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+                background-repeat: no-repeat;
+                background-size: contain; 
+            }
+
+        body{
+                background-color: #333333;
+        }
+
+        li a {
+            display: block;
+            color: #1b1b1b;
+            padding: 20px;
+            text-decoration: none;
+            }
+
+        li a.light {
+            background-color: #018e11;
+            color: #1b1b1b;
+            font-family: 'Sen', sans-serif; 
+
+            }
+
+        li a:hover:not(.navbar) {
+            background-color: #015606;
+            color: white;
+            }
+
+        img{
+                width: 700px;
+                height: 700px;
+                top: 3px;
+                position: absolute;
+                color: #00c417;
+            }
+
+        .search {               
+                width: 500px;
+                height: 39px;
+                margin: 150px auto;
+                background: #444;
+                background: rgba(0,0,0,.2);
+                border-radius:  5px;
+                border: 1px solid #fff;
+                top: 0%;
+            }
+
+        input {    
+                width: 380px;
+                padding: 12.2px;
+                float: left;
+                color: #ccc;
+                border: 0;
+                background: transparent;
+                border-radius: 5px;
+                background:transparent;
+                background: #fff;
+                color:#1f1f1f;
+                box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+                outline: 0;
+                opacity: 0.5;
+            }
+
+        .songs{
+                position: relative;
+                float: right;
+                border: 0;
+                padding: 0;
+                cursor: pointer;
+                height: 39px;
+                width: 120px;
+                color: #fff;
+                background: transparent;
+                border-left: 1px solid #fff;
+                border-radius: 5px;
+                background: #5e5e5e;
+                color:#444;
+                box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+                outline: 0;
+                opacity: 0.7;
+            }
+
+        footer {
+                position: fixed;
+                bottom: 0;
+                left: 0%;
+                width: 100%;
+                background-color: #018e11;
+                color: #fff;
+                text-align: center;
+                padding: 10px ;
+            }
+
+        .container {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+
+        p {
+                margin: 0;
+            }
+
+        .qoute h1{
+                color: #00a914d0;
+                font-size: 14rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+
+        .qoute h2{
+                color: #ffffffbb;
+                font-size: 6rem;
+                font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+            }
+
+        .qoute h3{
+                color: #ffffffbb;
+                font-size: 5.1rem;
+                font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+            }
+
+</style>
+
+<header>
+    <div>
+    <ul class="navbar" style="  
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 15%;
+                background-color: #313131;
+                position: fixed;
+                height: 100%;
+                top: 0%;
+                right: 0%;
+                overflow: auto;">
+
+            <li style="font-family: 'Sen', sans-serif; 
+                    font-size: 150%; 
+                    background-color: #0e6919; 
+                    color: white;">
+                    <a class="active" href="LyriKo.html">Home</a></li>
+            <li><a class="light" href="">Songs</a></li>
+            <li><a class="light" href="#">Playlist</a></li>
+            <li><a class="light" href="#">About</a></li></ul>
+</div>
+</header>
+
+<body>
+<!-----HOME PAGE------>
+    <div class="logo" style="color: #00b315c3;
+    font-size: 3rem;
+    margin-top: 0%;
+    margin-left: 5.5%;
+    font-family: 'Bakbak One', cursive;">Lyriko</div>
+    <div >
+        <img src="image/logo.png" alt="logo LyriKo">
+    </div>
+
+    <form class="search" action="">
+        <input type="search" placeholder="Search here..." required style="color: #000000;">
+        <button class="songs" type="submit" style="color: #fff;">Search</button> <!---- Search Bar ---->
+    </form>
+
+    <div class="qoute" style="display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    margin: 0;
+    line-height: 0;
+    text-align: left ;">
+    <h1>Listen</h1>
+    <h3>to your favorite</h3>
+    <h2>Music online!</h2>
+    </div> 
+
+<!-----SONGS PAGE------>
+<body class="songsect">
+<div>
+        <h1 style="color: #fff; padding: 2%; ">Songs</h1>
+
+</div>
+<div>
+<form action="towol.html" style="padding-bottom: 10%; padding-left: 10%;">
+    <button class="song1" style="height:auto;height: 83px; width: 70%; background-color: #333333; border-radius: 7px; float: left;  text-align: left; line-height: 70%; padding-left: 8%; border: 1px solid #4d4c4c;">
+        <h3 style="color: #fff;">The Ones We Once Loved</h3>
+        <p style="color: #fff;">Ben&Ben</p>
+        <img src="image/song1.jfif" alt="towol" style="top: 842px; left: 141px;">
+    </button>     
+</form> 
+
+<form action="rumbling.html" style="padding-bottom: 10%; padding-left: 10%; ">
+    <button  class="song2" style="height: 83px; width: 70%; background-color: #333333; border-radius: 7px; float: left;  text-align: left; line-height: 70%; padding-left: 8%; border: 1px solid #4d4c4c;">
+        <h3 style="color: #fff;">The Rumbling</h3>
+        <p style="color: #fff;">SiM</p>
+        <img src="image/song2.jpg" alt="Rumbling" style="top: 966px; left: 141px;">
+    </button>    
+</form>    
+</div>
+</body>
+
+
+</body>
+
+<footer>
+    <div class="container">
+        <p style="font-size: 80%; color: #fff;">&copy; 2023 My Website / Developed by Renz Bryan A. Tabay / Facebook: <a href="https://www.facebook.com/ren.z.tabay.9">https://www.facebook.com</a></p>
+    </div>
+</footer>
+</html>
